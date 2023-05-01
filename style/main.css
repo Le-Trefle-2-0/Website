@@ -4,6 +4,7 @@
     font-family: 'Titillium Web', sans-serif;
     color: #1D1D1D;
     font-weight: 400;
+    text-decoration: none;
 }
 
 html {
@@ -30,6 +31,10 @@ html {
     font-size: 20px;
     align-items: center;
 }
+
+/* .navbar a {
+    list-style: none;
+} */
 
 .navbar .branding img {
     height: 100%;
