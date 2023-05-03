@@ -49,6 +49,11 @@ nav .right a {
     background: #A4C79F;
     border-radius: 3vh;
     padding: 1vh;
+    transition: 0.5s;
+}
+
+.don:hover {
+    background: #C3D7CD;
 }
 
 .benevol {
