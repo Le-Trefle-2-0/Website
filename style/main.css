@@ -1,228 +1,194 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 * {
-    font-family: 'Titillium Web', sans-serif;
-    color: #1D1D1D;
-    font-weight: 400;
-    text-decoration: none;
-}
+    margin: 0;
+    padding: 0;
+    font-size: 2vh;
+}   
 
-html {
+body {
+    font-family: 'Titillium Web', sans-serif;
     overflow-x: hidden;
 }
 
-.navbar {
-    height: 10vh;
-    width: 100vw;
-    background-color: #C3D7CD;
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #C3D7CD;
+    flex-wrap: wrap;
+    padding: 2vh;
     position: fixed;
     top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 999;
-}
-
-.navbar .branding {
-    height: 87%;
-    display: flex;
-    margin-left: 30px;
-    font-size: 20px;
-    align-items: center;
-}
-
-/* .navbar a {
-    list-style: none;
-} */
-
-.navbar .branding img {
-    height: 100%;
-}
-
-.navbar .branding h1 {
-    margin: 0;
-    padding-left: 15px;
-    position: relative;
-    width: 250px;
-}
-
-.navbar .buttons {
-    width: 500px;
-}
-
-.navbar .buttons ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style-type: none;
-    justify-content: space-between;
-    padding-right: 30px;
-}
-
-.navbar .buttons a {
-    text-decoration: none;
-}
-
-.navbar .buttons li {
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-}
-
-.navbar .buttons li h2 {
-    transition: 0.5s;
-}
-.navbar .buttons li:hover h2 {
-    color: #4e4e4e;
-    transition: 0.5s;
-}
-
-.navbar .buttons li.important {
-    height: 50px;
-    background-color: #8DBF86;
-    transition: 0.5s;
-}
-
-.navbar .buttons li.important:hover {
-    background-color: #a4c79f;
-}
-
-.section {
-    height: 100vh;
     width: 100vw;
-    display: flex;
+}
+
+nav .left {
     align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+nav .left h1 {
+    font-style: normal;
+    font-size: 2.2vh;
+}
+
+nav .left img {
+    width: 10vh;
+}
+
+nav .right a {
+    color: #000;
+    text-decoration: none;
+    font-size: 2vh;
+    margin: 1vh;
+}
+
+.don {
+    background: #A4C79F;
+    border-radius: 3vh;
+    padding: 1vh;
+    transition: 0.5s;
+}
+
+.don:hover {
+    background: #C3D7CD;
+}
+
+.benevol {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 20vh;
+    height: 80vh;
+    padding: 3vh;
 }
 
-.section .text {
-    width: 45%;
+.benevol .img img{
+    width: 50vh;
 }
 
-.section .text h1 {
-    font-size: 40px;
+.benevol-text {
+    width: 60vh;
+    height: 80vh;
 }
 
-.section .text p {
-    font-size: 23px;
-    line-height: 23px;
+.scroll {
+    margin-top: 4vh;
+    text-align: center;
 }
 
-.presentation img {
-    width: 30%;
+.scroll-text {
+    font-size: 2vh;
 }
 
-.presentation .scroll {
-    position: relative;
-    top: 30px;
-    font-size: 32px;
+.discord {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2vh;
+    height: 80vh;
+    padding: 3vh;
 }
 
-.discord .text * {
-    text-align: right;
+.discord-text {
+    width: 60vh;
 }
 
-.discord iframe {
-    width: 33vw;
-    height: 33vw;
+.discord-text p {
+    width: 100%;
+    height: 50vh;
 }
 
-.discord .text .invite {
-    margin-top: 100px;
+.discord-text .invite {
     display: flex;
     justify-content: center;
 }
 
-.discord .text .invite a {
+.discord-text .invite a {
     height: 90px;
     width: 600px;
     border-radius: 15px;
     background-color: #5865F2;
     display: flex;
     align-items: center;
-    flex-direction: row;
     justify-content: space-evenly;
-}
-
-.discord .text a {
     text-decoration: none;
+    color: #fff;
 }
 
-.discord .text h2 {
-    color: #F3F3F3;
-    font-size: 30px;
+.discord iframe {
+    width: 33vw;
+    height: 630px;
+    border: 2px solid transparent;
 }
 
-.footer {
-    height: 280px;
-    width: 100vw;
-    background-color: #C3D7CD;
-    position: relative;
-    bottom: -10px;
-    left: -10px;
+footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    background: #C3D7CD;
+    flex-wrap: wrap;
+    padding: 2vh;
+    margin-top: 10vh;
 }
 
-.footer .mentions {
-    height: 87%;
+footer .left {
+    align-items: center;
     display: flex;
-    margin-left: 30px;
-    font-size: 20px;
-    align-items: center;
 }
 
-.footer .mentions img {
-    height: 100%;
+.left .footer-text {
+    margin-left: 10vh;
 }
 
-.footer .mentions .text {
-    margin-left: 15px;
+footer .left .img img {
+    width: 10vh;
 }
 
-.footer .buttons {
-    width: 600px;
-}
-
-.footer .buttons ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style-type: none;
-    justify-content: space-between;
-    padding-right: 30px;
-}
-
-.footer .buttons a {
+footer .right a {
+    color: #000;
     text-decoration: none;
+    font-size: 2vh;
+    margin: 1vh;
 }
 
-.footer .buttons li {
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    padding: 5px;
+.don {
+    background: #A4C79F;
+    border-radius: 3vh;
+    padding: 1vh;
 }
 
-.footer .buttons li h2 {
-    transition: 0.5s;
-    font-size: 30px;
-}
-
-.footer .buttons li:hover h2 {
-    color: #4e4e4e;
-    transition: 0.5s;
-}
-
-.footer .buttons li.important {
-    height: 50px;
-    background-color: #8DBF86;
-    transition: 0.5s;
-}
-
-.footer .buttons li.important:hover {
-    background-color: #a4c79f;
+@media (max-width: 1000px) {
+    .benevol-text {
+        padding: 0;
+    }
+    .benevol .img img{
+        width: 30vh;
+    }
+    .scroll-text {
+        font-size: 2.5vh;
+    }
+    .invite {
+        margin-top: 30vh;
+    }
+    .discord{
+        margin-top: 40vh;
+    }
+    .discord-text .invite a {
+        height: 10vh;
+        width: 40vh;
+    }
+    iframe {
+        opacity: 0;
+        position: absolute;
+        width: 90000vh;
+    }
+    footer {
+        margin-top: 0vh;
+    }
+    .left .footer-text {
+        margin-left: 2vh;
+    }
 }
