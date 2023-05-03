@@ -120,7 +120,8 @@ nav .right a {
 
 .discord iframe {
     width: 33vw;
-    height: 33vw;
+    height: 630px;
+    border: 2px solid transparent;
 }
 
 footer {
