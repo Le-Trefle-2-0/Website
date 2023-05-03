@@ -77,6 +77,7 @@ nav .right a {
 .scroll {
     margin-top: 4vh;
     text-align: center;
+    animation: 2s infinite ease float;
 }
 
 .scroll-text {
