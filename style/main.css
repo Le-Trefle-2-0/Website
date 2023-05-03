@@ -88,16 +88,15 @@ nav .right a {
 }
 
 .discord-text {
-    width: 40vh;
+    width: 60vh;
 }
 
 .discord-text p {
-    width: 40vh;
+    width: 100%;
     height: 50vh;
 }
 
 .discord-text .invite {
-    margin-top: 100px;
     display: flex;
     justify-content: center;
 }
@@ -111,6 +110,7 @@ nav .right a {
     align-items: center;
     justify-content: space-evenly;
     text-decoration: none;
+    color: #fff;
 }
 
 .discord iframe {
