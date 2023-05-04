@@ -53,6 +53,7 @@ nav .right a {
     margin-top: 14vh;
     padding-top: 50px;
     gap: 40px;
+    padding-bottom: 150px;
 }
 
 .recruiting h1 {
@@ -102,10 +103,15 @@ nav .right a {
     background-color: #A4C79F;
     border-radius: 15px;
     padding: 10px;
-    width: 130px;
+    width: 180px;
     text-align: center;
     font-size: 2vh;
     font-weight: 600;
+    color: #000;
+    text-decoration: none;
+}
+
+.recruiting .button a {
     color: #000;
     text-decoration: none;
 }
@@ -147,30 +153,27 @@ footer .right a {
 }
 
 @media (max-width: 1000px) {
-    .benevol-text {
-        padding: 0;
+    .recruiting .element {
+        display: flex;
+        flex-direction: column;
+        height: auto;
     }
-    .benevol .img img{
-        width: 30vh;
+    
+    .recruiting .element .logo {
+        display: none;
     }
-    .scroll-text {
-        font-size: 2.5vh;
+
+    .recruiting .element .text {
+        text-align: center;
     }
-    .invite {
-        margin-top: 30vh;
+
+    .recruiting .element .button {
+        position: relative;
+        /* top: calc(150px + 100%); */
+        top: 45px;
+        bottom: 0;
     }
-    .discord{
-        margin-top: 40vh;
-    }
-    .discord-text .invite a {
-        height: 10vh;
-        width: 40vh;
-    }
-    iframe {
-        opacity: 0;
-        position: absolute;
-        width: 90000vh;
-    }
+
     footer {
         margin-top: 0vh;
     }
