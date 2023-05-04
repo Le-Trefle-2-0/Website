@@ -46,6 +46,70 @@ nav .right a {
     margin: 1vh;
 }
 
+.recruiting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 14vh;
+    padding-top: 50px;
+    gap: 40px;
+}
+
+.recruiting h1 {
+    font-size: 3vh;
+    font-weight: 300;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.recruiting .element {
+    width: 70vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    outline: #A4C79F 4px solid;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.recruiting .element .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.recruiting .element .info .logo {
+    width: 80px;
+    height: 80px;
+}
+
+.recruiting .element .info .text {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.recruiting .element .title h2 {
+    font-weight: 600;
+}
+
+.recruiting .button {
+    background-color: #A4C79F;
+    border-radius: 15px;
+    padding: 10px;
+    width: 130px;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+}
+
 footer {
     display: flex;
     justify-content: space-around;
