@@ -71,7 +71,7 @@ nav .right a {
     flex-direction: row;
     outline: #A4C79F 4px solid;
     justify-content: space-between;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 20px;
 }
 
@@ -101,7 +101,7 @@ nav .right a {
 
 .recruiting .button {
     background-color: #A4C79F;
-    border-radius: 15px;
+    border-radius: 40px;
     padding: 10px;
     width: 180px;
     text-align: center;
