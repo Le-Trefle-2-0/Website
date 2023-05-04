@@ -53,10 +53,6 @@ nav .right a {
     transition: 0.5s;
 }
 
-.don:hover {
-    background: #C3D7CD;
-}
-
 .benevol {
     display: flex;
     flex-wrap: wrap;
