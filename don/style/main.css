@@ -79,6 +79,13 @@ nav .right a {
     text-decoration: none;
 }
 
+.donation iframe {
+    width: 100%;
+    height: 1300px;
+    overflow-y: hidden;
+    border: none;
+}
+
 footer {
     display: flex;
     justify-content: space-around;
