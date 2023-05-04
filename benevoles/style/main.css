@@ -1,199 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 * {
-    font-family: 'Titillium Web', sans-serif;
-    color: #1D1D1D;
-    font-weight: 400;
-    text-decoration: none;
-}
+    margin: 0;
+    padding: 0;
+    font-size: 2vh;
+}   
 
-html {
+body {
+    font-family: 'Titillium Web', sans-serif;
     overflow-x: hidden;
 }
 
-body {
-    padding-top: 10vh;
-}
-
-.navbar {
-    height: 10vh;
-    width: 100vw;
-    background-color: #C3D7CD;
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #C3D7CD;
+    flex-wrap: wrap;
+    padding: 2vh;
     position: fixed;
     top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100vw;
     z-index: 999;
 }
 
-.navbar .branding {
-    height: 87%;
-    display: flex;
-    margin-left: 30px;
-    font-size: 20px;
+nav .left {
     align-items: center;
-}
-
-.navbar .branding img {
-    height: 100%;
-}
-
-.navbar .branding h1 {
-    margin: 0;
-    padding-left: 15px;
-    position: relative;
-    width: 250px;
-}
-
-.navbar .buttons {
-    width: 500px;
-}
-
-.navbar .buttons ul {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style-type: none;
-    justify-content: space-between;
-    padding-right: 30px;
-}
-
-.navbar .buttons a {
-    text-decoration: none;
-}
-
-.navbar .buttons li {
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-}
-
-.navbar .buttons li h2 {
-    transition: 0.5s;
-}
-.navbar .buttons li:hover h2 {
-    color: #4e4e4e;
-    transition: 0.5s;
-}
-
-.navbar .buttons li.important {
-    height: 50px;
-    background-color: #8DBF86;
-    transition: 0.5s;
-}
-
-.navbar .buttons li.important:hover {
-    background-color: #a4c79f;
-}
-
-.footer {
-    height: 280px;
-    width: 100vw;
-    background-color: #C3D7CD;
-    position: relative;
-    bottom: -10px;
-    left: -10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer .mentions {
-    height: 87%;
-    display: flex;
-    margin-left: 30px;
-    font-size: 20px;
-    align-items: center;
-}
-
-.footer .mentions img {
-    height: 100%;
-}
-
-.footer .mentions .text {
-    margin-left: 15px;
-}
-
-.footer .buttons {
-    width: 600px;
-}
-
-.footer .buttons ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style-type: none;
-    justify-content: space-between;
-    padding-right: 30px;
-}
-
-.footer .buttons a {
-    text-decoration: none;
-}
-
-.footer .buttons li {
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-}
-
-.footer .buttons li h2 {
-    transition: 0.5s;
-    font-size: 30px;
-}
-
-.footer .buttons li:hover h2 {
-    color: #4e4e4e;
-    transition: 0.5s;
-}
-
-.footer .buttons li.important {
-    height: 50px;
-    background-color: #8DBF86;
-    transition: 0.5s;
-}
-
-.footer .buttons li.important:hover {
-    background-color: #a4c79f;
-}
-
-.recruiting {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.recruiting .card {
-    /* background-color: #1D1D1D; */
-    height: 90px;
-    width: 85vw;
-    border-radius: 15px;
-    /* box-shadow: 5px 5px 5px #1D1D1D; */
-    display: flex;
-    align-items: center;
     gap: 20px;
-    padding: 10px;
-    outline: #a4c79f 5px solid;
 }
 
-.recruiting .card .logo {
-    height: 80px;
-    width: 80px;
+nav .left h1 {
+    font-style: normal;
+    font-size: 2.2vh;
+}
+
+nav .left img {
+    width: 10vh;
+}
+
+nav .right a {
+    color: #000;
+    text-decoration: none;
+    font-size: 2vh;
+    margin: 1vh;
+}
+
+footer {
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    background: #C3D7CD;
+    flex-wrap: wrap;
+    padding: 2vh;
+    margin-top: 10vh;
 }
 
-.recruiting .card .text {
+footer .left {
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    height: 80px;
-    justify-content: space-between;
 }
 
-.recruiting .card .text .title {
-    height: 50px;
+.left .footer-text {
+    margin-left: 10vh;
+}
+
+footer .left .img img {
+    width: 10vh;
+}
+
+footer .right a {
+    color: #000;
+    text-decoration: none;
+    font-size: 2vh;
+    margin: 1vh;
+}
+
+.don {
+    background: #A4C79F;
+    border-radius: 3vh;
+    padding: 1vh;
+}
+
+@media (max-width: 1000px) {
+    .benevol-text {
+        padding: 0;
+    }
+    .benevol .img img{
+        width: 30vh;
+    }
+    .scroll-text {
+        font-size: 2.5vh;
+    }
+    .invite {
+        margin-top: 30vh;
+    }
+    .discord{
+        margin-top: 40vh;
+    }
+    .discord-text .invite a {
+        height: 10vh;
+        width: 40vh;
+    }
+    iframe {
+        opacity: 0;
+        position: absolute;
+        width: 90000vh;
+    }
+    footer {
+        margin-top: 0vh;
+    }
+    .left .footer-text {
+        margin-left: 2vh;
+    }
 }
