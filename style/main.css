@@ -168,31 +168,39 @@ footer .right a {
 @media (max-width: 1000px) {
     .benevol-text {
         padding: 0;
+        text-align: center;
     }
+
     .benevol .img img{
-        width: 30vh;
+        display: none;
     }
+
     .scroll-text {
-        font-size: 2.5vh;
+        display: none;
     }
+
     .invite {
-        margin-top: 30vh;
+        margin-top: 100px;
     }
+
     .discord{
-        margin-top: 40vh;
+        margin-top: 10vh;
+        text-align: center;
     }
+
     .discord-text .invite a {
         height: 10vh;
         width: 40vh;
     }
+
     iframe {
-        opacity: 0;
-        position: absolute;
-        width: 90000vh;
+        display: none;
     }
+
     footer {
         margin-top: 0vh;
     }
+
     .left .footer-text {
         margin-left: 2vh;
     }
