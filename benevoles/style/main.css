@@ -24,15 +24,18 @@ nav {
     z-index: 999;
 }
 
-nav .left {
+nav .left a {
     align-items: center;
     display: flex;
     gap: 20px;
+    text-decoration: none;
+    color: #000;
 }
 
 nav .left h1 {
     font-style: normal;
-    font-size: 2.2vh;
+    font-size: 2.5vh;
+    font-weight: 600;
 }
 
 nav .left img {
