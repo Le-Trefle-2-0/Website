@@ -24,10 +24,12 @@ nav {
     z-index: 999;
 }
 
-nav .left {
+nav .left a {
     align-items: center;
     display: flex;
     gap: 20px;
+    text-decoration: none;
+    color: #000;
 }
 
 nav .left h1 {
