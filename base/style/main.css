@@ -85,30 +85,6 @@ footer .right a {
 }
 
 @media (max-width: 1000px) {
-    .benevol-text {
-        padding: 0;
-    }
-    .benevol .img img{
-        width: 30vh;
-    }
-    .scroll-text {
-        font-size: 2.5vh;
-    }
-    .invite {
-        margin-top: 30vh;
-    }
-    .discord{
-        margin-top: 40vh;
-    }
-    .discord-text .invite a {
-        height: 10vh;
-        width: 40vh;
-    }
-    iframe {
-        opacity: 0;
-        position: absolute;
-        width: 90000vh;
-    }
     footer {
         margin-top: 0vh;
     }
