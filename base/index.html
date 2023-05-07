@@ -22,7 +22,7 @@
     </div>
     <div class="right">
       <a href="/benevoles">Devenir bénévole</a>
-      <a href="mailto:contact@letrefle.org">Contact</a>
+      <a onclick="openForm()">Contact</a>
       <a href="/don" class="don">Faire un don</a>
     </div>
   </nav>
@@ -37,6 +37,7 @@
         <input type="text" name="name" placeholder="Nom" required/>
         <input type="email" name="email" placeholder="Adresse courriel" required/>
         <textarea name="message" placeholder="Message" required></textarea>
+        <input type="hidden" name="redirect" value="https://letrefle.org/"/>
         <button type="submit">Envoyer</button>
       </form>
     </div>
