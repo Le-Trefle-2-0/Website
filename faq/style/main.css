@@ -46,6 +46,7 @@ nav .right a {
     text-decoration: none;
     font-size: 2vh;
     margin: 1vh;
+    cursor: pointer;
 }
 
 .contact {
