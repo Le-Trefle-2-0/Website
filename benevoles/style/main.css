@@ -264,6 +264,11 @@ footer .right a {
     footer {
         margin-top: 0vh;
     }
+
+    footer .right {
+        margin-top: 20px;
+    }
+    
     .left .footer-text {
         margin-left: 2vh;
     }
