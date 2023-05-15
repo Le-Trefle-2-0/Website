@@ -34,8 +34,7 @@ nav .left a {
 
 nav .left h1 {
     font-style: normal;
-    font-size: 2.5vh;
-    font-weight: 600;
+    font-size: 2.2vh;
 }
 
 nav .left img {
@@ -129,103 +128,6 @@ nav .right a {
     background: #C3D7CD;
 }
 
-.don {
-    background: #A4C79F;
-    border-radius: 3vh;
-    padding: 1vh;
-    transition: 0.5s;
-}
-
-.don:hover {
-    background: #C3D7CD;
-}
-
-.benevol {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 15vh;
-    height: 85vh;
-    padding: 3vh;
-}
-
-.benevol .img img{
-    width: 50vh;
-    position: relative;
-    top: 10vh;
-}
-
-.benevol-text {
-    width: 60vh;
-    height: 80vh;
-}
-
-.benevol-text h1 {
-    font-size: 2.6vh;
-}
-
-.benevol-text p {
-    font-size: 2.2vh;
-}
-
-.scroll {
-    margin-top: 4vh;
-    text-align: center;
-    animation: 2s infinite ease float;
-}
-
-.scroll-text {
-    font-size: 2vh;
-}
-
-.discord {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 2vh;
-    height: 80vh;
-    padding: 3vh;
-}
-
-.discord-text {
-    width: 60vh;
-    text-align: right;
-}
-
-.discord-text h1 {
-    font-size: 2.6vh;
-}
-
-.discord-text p {
-    width: 100%;
-    height: 50vh;
-    font-size: 2.2vh;
-}
-
-.discord-text .invite {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.discord-text .invite a {
-    height: 90px;
-    width: 600px;
-    border-radius: 15px;
-    background-color: #5865F2;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-decoration: none;
-    color: #fff;
-}
-
-.discord iframe {
-    width: 33vw;
-    height: 70vh;
-    border: 2px solid transparent;
-}
-
 footer {
     display: flex;
     justify-content: space-around;
@@ -263,37 +165,6 @@ footer .right a {
 }
 
 @media (max-width: 1000px) {
-    .benevol-text {
-        padding: 0;
-        text-align: center;
-    }
-
-    .benevol .img img{
-        display: none;
-    }
-
-    .scroll-text {
-        display: none;
-    }
-
-    .invite {
-        margin-top: 100px;
-    }
-
-    .discord{
-        margin-top: 10vh;
-        text-align: center;
-    }
-
-    .discord-text .invite a {
-        height: 10vh;
-        width: 40vh;
-    }
-
-    iframe {
-        display: none;
-    }
-
     footer {
         margin-top: 0vh;
     }
@@ -301,7 +172,7 @@ footer .right a {
     footer .right {
         margin-top: 20px;
     }
-
+    
     .left .footer-text {
         margin-left: 2vh;
     }
