@@ -285,6 +285,14 @@ footer .right a {
         text-align: center;
     }
 
+    .discord-text {
+        text-align: center;
+    }
+
+    .discord .invite {
+        margin-top: calc(400px - 40vw);
+    }
+
     .discord-text .invite a {
         height: 10vh;
         width: 40vh;
