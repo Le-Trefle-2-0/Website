@@ -203,6 +203,92 @@ nav .right a {
     font-size: 1.8vh;
 }
 
+.forms .form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.forms .form .content {
+    background: #fff;
+    width: 70vh;
+    height: 70vh;
+    margin: 15vh auto;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+}
+
+.forms .form .content .close {
+    position: absolute;
+    top: 18vh;
+    left: calc(50vw + 35vh - 40px);
+}
+
+.forms .form .content .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.forms .form .content .content-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    width: 100%;
+    height: 60%;
+}
+
+.forms .form .content .input {
+    position: relative;
+    width: 250px;
+}
+
+.forms .form .content .input input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #A4C79F;
+    padding: 1.5vh;
+}
+
+.forms .form .content .input span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: #A4C79F;
+}
+
+.forms .form .content .input input:focus ~ span,
+.forms .form .content .input input:valid ~ span {
+    top: -10px;
+    left: 5px;
+    background: #A4C79F;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+
 footer {
     display: flex;
     justify-content: space-around;

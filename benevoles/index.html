@@ -95,6 +95,42 @@
     </div>
   </div>
 
+  <div class="forms">
+    <div class="form">
+      <div class="content">
+        <div class="close" onclick="applyForm(0, false)">X</div>
+
+        <div class="top">
+          <h2>Postuler pour le poste d'Animateur.trice</h2>
+          <p>Merci pour l'intéret que vous apportez á notre association ainsi que pour votre volonté d'investissement. Afin de pouvoir répondre plus en détails á votre candidature nous vous demandons de bien vouloir remplir le formulaire ci-dessous.</p>  
+        </div>
+
+        <form class="content-form" action="https://api.web3forms.com/submit" method="post">
+          <input type="hidden" name="access_key" value="ca3e2c67-3898-45e6-9d7a-8ba7329ccdff"/>
+          <input type="hidden" name="subject" value="Nouvelle candidature pour le poste d'Animateur">
+          <input type="hidden" name="from_name" value="Candidatures">
+
+          <div class="input">
+            <input type="text" name="Prénom" required>
+            <span>Prénom</span>
+          </div>
+
+          <div class="input">
+            <input type="text" name="Nom" required>
+            <span>Nom</span>
+          </div>
+
+          <!-- <div class="input">
+            <input type="email" name="Adresse courriel" required>
+            <span>Adresse courriel</span>
+          </div> -->
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="forms.js"></script>
+
   <footer>
     <div class="left">
       <div class="img">
