@@ -129,81 +129,48 @@ nav .right a {
     background: #C3D7CD;
 }
 
-.recruiting {
+.page {
+    margin-top: 20vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 14vh;
-    padding-top: 50px;
-    gap: 40px;
-    padding-bottom: 150px;
+    gap: 30px;
+    width: 600px;
+    margin: 20vh auto;
 }
 
-.recruiting h1 {
+.page h1 {
+    text-align: center;
     font-size: 3vh;
+}
+
+.page li {
+    margin-left: 25px;
+}
+
+.page a {
+    position: absolute;
+    left: calc(50% - (150px / 2));
+    border: 2px solid #A4C79F;
+    border-radius: 50px;
+    text-align: center;
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2vh;
+    text-transform: uppercase;
     font-weight: 300;
-    margin-bottom: 2vh;
-    text-align: center;
+    padding: 1vh;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-.recruiting p {
-    text-align: center;
-}
-
-.recruiting .element {
-    width: 70vw;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    outline: #A4C79F 4px solid;
-    justify-content: space-between;
-    border-radius: 20px;
-    padding: 20px;
-}
-
-.recruiting .element .info {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    text-align: left;
-    align-items: center;
-    gap: 10px;
-}
-
-.recruiting .element .info .logo {
-    width: 80px;
-    height: 80px;
-}
-
-.recruiting .element .info .text {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-
-.recruiting .element .title h2 {
-    font-weight: 600;
-}
-
-.recruiting .button {
-    background-color: #A4C79F;
-    border-radius: 40px;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-    font-weight: 600;
-    color: #000;
-    text-decoration: none;
-}
-
-.recruiting .button a {
-    color: #000;
-    text-decoration: none;
-    font-size: 1.8vh;
+.page a:hover {
+    background: #A4C79F;
+    color: #fff;
 }
 
 .form {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -216,8 +183,8 @@ nav .right a {
 .form .content {
     background: #fff;
     width: 70vh;
-    height: 75vh;
-    margin: 12.5vh auto;
+    height: 80vh;
+    margin: 7.5vh auto;
     border-radius: 3vh;
     display: flex;
     flex-direction: column;
@@ -230,7 +197,8 @@ nav .right a {
 
 .form .content .close {
     position: absolute;
-    top: 15vh;
+    top: 10vh;
+    cursor: pointer;
     left: calc(50vw + 35vh - 40px);
 }
 
@@ -386,6 +354,10 @@ footer .right a {
         /* top: calc(150px + 100%); */
         top: 45px;
         bottom: 0;
+    }
+
+    .page {
+        width: 90%;
     }
 
     .form .content .close {
