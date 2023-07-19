@@ -203,7 +203,7 @@ nav .right a {
     font-size: 1.8vh;
 }
 
-.forms .form {
+.form {
     position: fixed;
     top: 0;
     left: 0;
@@ -213,7 +213,7 @@ nav .right a {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.forms .form .content {
+.form .content {
     background: #fff;
     width: 70vh;
     height: 75vh;
@@ -228,13 +228,13 @@ nav .right a {
     /* overflow-y: scroll; */
 }
 
-.forms .form .content .close {
+.form .content .close {
     position: absolute;
     top: 15vh;
     left: calc(50vw + 35vh - 40px);
 }
 
-.forms .form .content .top {
+.form .content .top {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -242,7 +242,7 @@ nav .right a {
     text-align: center;
 }
 
-.forms .form .content .content-form {
+.form .content .content-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -253,21 +253,21 @@ nav .right a {
     height: 50vh;
 }
 
-.forms .form .content .input {
+.form .content .input {
     position: relative;
     width: 550px;
     height: 50px;
 }
 
-.forms .form .content .large-input {
+.form .content .large-input {
     position: relative;
     width: 550px;
     height: 200px;
     top: 0;
 }
 
-.forms .form .content .input input,
-.forms .form .content .large-input textarea {
+.form .content .input input,
+.form .content .large-input textarea {
     width: 100%;
     padding: 0 0 0 10px; 
     border-radius: 5px;
@@ -276,7 +276,7 @@ nav .right a {
     font-family: 'Titillium Web', sans-serif;
 }
 
-.forms .form .content .input span {
+.form .content .input span {
     position: absolute;
     left: 0;
     top: 0;
@@ -289,16 +289,16 @@ nav .right a {
     color: #A4C79F;
 }
 
-.forms .form .content .input input:focus,
-.forms .form .content .large-input textarea:focus {
+.form .content .input input:focus,
+.form .content .large-input textarea:focus {
     border: 2px solid #A4C79F;
     outline: none;
 }
 
-.forms .form .content .input input:focus ~ span,
-.forms .form .content .input input:valid ~ span,
-.forms .form .content .large-input textarea:focus ~ span,
-.forms .form .content .large-input textarea:valid ~ span {
+.form .content .input input:focus ~ span,
+.form .content .input input:valid ~ span,
+.form .content .large-input textarea:focus ~ span,
+.form .content .large-input textarea:valid ~ span {
     top: -10px;
     left: 5px;
     background: #A4C79F;
@@ -308,7 +308,7 @@ nav .right a {
     font-size: 0.7em;
 }
 
-.forms .form form button {
+.form form button {
     width: 160px;
     height: 60px;
     border-radius: 3vh;
@@ -320,12 +320,12 @@ nav .right a {
     transition: 0.5s;
 }
 
-.forms .form form button:hover {
+.form form button:hover {
     background-color: #A4C79F;
     color: #fff;
 }
 
-.forms .form .responsive-error {
+.form .responsive-error {
     display: none;
 }
 
@@ -334,6 +334,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     background: #C3D7CD;
+    width: 100vw;
     flex-wrap: wrap;
     padding: 2vh;
     margin-top: 10vh;
@@ -387,13 +388,13 @@ footer .right a {
         bottom: 0;
     }
 
-    .forms .form .content .close {
+    .form .content .close {
         position: absolute;
         top: 15px;
         left: calc(100vw - 40px);
     }
 
-    .forms .form .content {
+    .form .content {
         width: 100vw;
         height: 100vh;
         margin: 0;
@@ -402,12 +403,12 @@ footer .right a {
         display: flex;
     }
 
-    .forms .form .content .top,
-    .forms .form .content .content-form {
+    .form .content .top,
+    .form .content .content-form {
         display: none;
     }
 
-    .forms .form .responsive-error {
+    .form .responsive-error {
         display: block;
         text-align: center;
         font-size: 2vh;
