@@ -45,56 +45,96 @@
   </div>
   <script src="/main.js"></script>
 
-  <div class="recruiting">
-    <h1>Animateur.trice Principal.e</h1>
+  <div class="page">
+    <h1>Recrutement - Animateur.trice Principal.e</h1>
     
-    <div class="form" id="form">
-      <div class="content">
-        <div class="close" onclick="applyForm(false)">X</div>
+    <div>
+      <h3>Préambule :</h3>
+      <p>
+        Le Trèfle 2.0 dispose d’un serveur sur le réseau social communautaire Discord sur lequel différents salons textuels et vocaux sont accessible au public. Dans son objectif de soutien moral, l’association propose un service d’écoute ainsi que la mise en place d’un environnement communautaire. Afin de diversifier l’activité et d’étendre les opportunités proposées dans cet environnement, l’équipe d’animation met en place des activités permettant au public de s’investir et de participer dans le cadre bienveillant de l’association.
+        En relation directe avec l’Équipe de Coordination, l’Animateur.trice Principal.e est le responsable de l’équipe d’animation, de son organisation.
+      </p>
+    </div>
 
-        <div class="top">
-          <h2>Postuler pour le poste d'Animateur.trice</h2>
-          <p>Merci pour l'intéret que vous apportez á notre association ainsi que pour votre volonté d'investissement. Afin de pouvoir répondre plus en détails á votre candidature nous vous demandons de bien vouloir remplir le formulaire ci-dessous.</p>  
+    <div>
+      <h3>Tâches :</h3>
+      <ul>
+        <li>Organisation de l’équipe d’animation ;</li>
+        <li>Propose ses outils et supports d’animation ;</li>
+        <li>Assurer le bon déroulement des animations ;</li>
+        <li>Mise en place du planning des animations à venir.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Responsabilités :</h3>
+      <p>
+        Il est attendu de l’Animateur.trice Principal.e l’organisation et la gestion de l’équipe d’animation. Cet Animateur.trice Principal.e doit mettre en place les solutions nécessaires pour que l’équipe puisse répondre dans son intégralité à son mandat. Il est donc demandé d’être présent de manière régulière sur le serveur Discord et disponible pour répondre aux problématiques de l’équipe.
+      </p>
+    </div>
+
+    <div>
+      <h3>Qualifications :</h3>
+      <ul>
+        <li>Il est nécessaire de connaitre le fonctionnement de Discord ainsi que de ses fonctionnalités les plus essentielles ;</li>
+        <li>Toute expérience ou qualification dans le secteur de l’animation/l’éducation est bénéfique ;</li>
+        <li>Une aisance et bonne éloquence orale ainsi qu’un bon français écrit sont requis ;</li>
+        <li>Gestion et organisation d’équipe.</li>
+      </ul>
+    </div>
+
+    <div>
+      <a onclick="applyForm(true)">Postuler</a>
+    </div>
+  </div>
+  
+  <div class="form" id="form">
+    <div class="content">
+      <div class="close" onclick="applyForm(false)">X</div>
+
+      <div class="top">
+        <h2>Formulaire de candidature - Animateur.trice Principal.e</h2>
+        <p>Merci pour l'intéret que vous apportez á notre association ainsi que pour votre volonté d'investissement. Afin de pouvoir répondre plus en détails á votre candidature nous vous demandons de bien vouloir remplir le formulaire ci-dessous.</p>  
+      </div>
+
+
+      <form class="content-form" action="https://api.web3forms.com/submit" method="post">
+        <input type="hidden" name="access_key" value="ca3e2c67-3898-45e6-9d7a-8ba7329ccdff"/>
+        <input type="hidden" name="subject" value="Nouvelle candidature pour le poste d'Animateur">
+        <input type="hidden" name="from_name" value="Candidatures">
+
+        <div class="input">
+          <input type="text" name="Prénom" required>
+          <span>Prénom</span>
         </div>
 
-        <form class="content-form" action="https://api.web3forms.com/submit" method="post">
-          <input type="hidden" name="access_key" value="ca3e2c67-3898-45e6-9d7a-8ba7329ccdff"/>
-          <input type="hidden" name="subject" value="Nouvelle candidature pour le poste d'Animateur">
-          <input type="hidden" name="from_name" value="Candidatures">
-
-          <div class="input">
-            <input type="text" name="Prénom" required>
-            <span>Prénom</span>
-          </div>
-
-          <div class="input">
-            <input type="text" name="Nom" required>
-            <span>Nom</span>
-          </div>
-
-          <div class="input">
-            <input type="email" name="email" required>
-            <span>Adresse courriel</span>
-          </div>
-
-          <div class="input">
-            <input type="text" name="Age" required>
-            <span>Depuis combien de temps utilisez-vous Discord ?</span>
-          </div>
-
-          <div class="input large-input">
-            <textarea type="text" name="Motivation" minlength="1" spellcheck="false" autocomplete="off" required></textarea>
-            <span>Quelle est votre motivation a intégrer l'association ?</span>
-          </div>
-
-          <button type="submit">
-            <span>Postuler</span>
-          </button>
-        </form>
-
-        <div class="responsive-error">
-          <span>Ce formulaire n'est pas disponible depuis cet appareil. Merci d'utiliser un ordinateur !</span>
+        <div class="input">
+          <input type="text" name="Nom" required>
+          <span>Nom</span>
         </div>
+
+        <div class="input">
+          <input type="email" name="email" required>
+          <span>Adresse courriel</span>
+        </div>
+
+        <div class="input">
+          <input type="text" name="Age" required>
+          <span>Depuis combien de temps utilisez-vous Discord ?</span>
+        </div>
+
+        <div class="input large-input">
+          <textarea type="text" name="Motivation" minlength="1" spellcheck="false" autocomplete="off" required></textarea>
+          <span>Quelle est votre motivation a intégrer l'association ?</span>
+        </div>
+
+        <button type="submit">
+          <span>Postuler</span>
+        </button>
+      </form>
+
+      <div class="responsive-error">
+        <span>Ce formulaire n'est pas encore disponible depuis cet appareil ! Merci d'utiliser un ordinateur.</span>
       </div>
     </div>
   </div>
