@@ -1,5 +1,5 @@
 function applyForm(display) {
-    let form = document.getElementsByClassName("form");
+    let form = document.getElementById("form");
 
     if (display) {
         form.style.display = "flex";
