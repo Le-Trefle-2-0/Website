@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script src="https://cdn.counter.dev/script.js" data-id="f57a9dd6-2304-43c0-911b-bf75b45766bb" data-utcoffset="1"></script>
+  <meta name="description" content="Page description" />
+  <meta name="keywords" content="association, écoute, trèfle, 2.0, soutien moral, discord" />
+  <title>Le Trèfle 2.0 - ProtonMail</title>
+  <link rel="stylesheet" href="/partner/style/main.css" />
+  <link rel="icon" href="/assets/logo.svg" />
+</head>
+
+<body>
+  <nav>
+    <div class="left">
+      <a href="/">
+        <img src="/assets/logo.svg" alt="Logo de l'association">
+        <h1>Le Trèfle 2.0</h1>
+      </a>
+    </div>
+    <div class="right">
+      <a href="/benevoles">Devenir bénévole</a>
+      <a onclick="openForm()">Contact</a>
+      <a href="/don" class="don">Faire un don</a>
+    </div>
+  </nav>
+
+  <div class="contact" id="contact">
+    <div class="contact-box">
+      <div class="close" onclick="closeForm()">X</div>
+      <h2>Nous contacter :</h2>
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="post">
+        <input type="hidden" name="access_key" value="ca3e2c67-3898-45e6-9d7a-8ba7329ccdff"/>
+        <input type="hidden" name="subject" value="Nouveau message depuis letrefle.org">
+        <input type="hidden" name="from_name" value="Formulaire Contact">
+        
+        <input type="text" name="name" placeholder="Nom" required/>
+        <input type="email" name="email" placeholder="Adresse courriel" required/>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <input type="hidden" name="redirect" value="https://letrefle.org/"/>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </div>
+  <script src="/main.js"></script>
+
+  <div class="content">
+    <div class="title">
+      <img src="https://proton.me/static/39816156cea861bd9fac867c3a254186/proton-mail-full-logo.svg" alt="Logo de ProtonMail" />
+      <h1>Soutien de ProtonMail</h1>
+    </div>
+    <p>
+      ProtonMail est une messagerie courriel sécurisée et chiffrée. ProtonMail soutient Le Trefle 2.0 en offrant une réduction de 50% sur l'offre Mail Plus. <br/><br/>
+      Cette offre nous permet de profiter d'une messagerie avec notre nom de domaine personnalisé ainsi que de pouvoir échanger de maniere sécurisée
+    </p>
+    <table>
+      <tr>
+        <th>Avantages :</th>
+        <th>Contreparties :</th>
+      </tr>
+      <tr>
+        <td>50% de réduction (24€/an)</td>
+        <td>Aucune</td>
+      </tr>
+    </table>
+    <a href="https://pr.tn/ref/RGH1CYG22J4G" target="_blank">En savoir plus sur ProtonMail</a>
+  </div>
+
+  <footer>
+    <div class="left">
+      <div class="img">
+        <img src="/assets/logo.svg" alt="Logo de l'association">
+      </div>
+      <div class="footer-text">
+        <p>Le Trèfle 2.0<br/>
+          324, chemin de Goulsou<br/>
+          30120 Le Vigan<br/>
+          RNA : W30 300 5428
+        </p>
+      </div>
+    </div>
+    <div class="right">
+      <a href="/faq">F.A.Q.</a>
+      <a href="/legal">Mentions Légales</a>
+      <a href="/don" class="don">Faire un don</a>
+    </div>
+  </footer>
+</body>
+</html>
