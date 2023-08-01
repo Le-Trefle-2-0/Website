@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script src="https://cdn.counter.dev/script.js" data-id="f57a9dd6-2304-43c0-911b-bf75b45766bb" data-utcoffset="1"></script>
+  <meta name="description" content="Page description" />
+  <meta name="keywords" content="association, écoute, trèfle, 2.0, soutien moral, discord" />
+  <title>Le Trèfle 2.0 - Discord</title>
+  <link rel="stylesheet" href="/partner/style/main.css" />
+  <link rel="icon" href="/assets/logo.svg" />
+</head>
+
+<body>
+  <nav>
+    <div class="left">
+      <a href="/">
+        <img src="/assets/logo.svg" alt="Logo de l'association">
+        <h1>Le Trèfle 2.0</h1>
+      </a>
+    </div>
+    <div class="right">
+      <a href="/benevoles">Devenir bénévole</a>
+      <a onclick="openForm()">Contact</a>
+      <a href="/don" class="don">Faire un don</a>
+    </div>
+  </nav>
+
+  <div class="contact" id="contact">
+    <div class="contact-box">
+      <div class="close" onclick="closeForm()">X</div>
+      <h2>Nous contacter :</h2>
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="post">
+        <input type="hidden" name="access_key" value="ca3e2c67-3898-45e6-9d7a-8ba7329ccdff"/>
+        <input type="hidden" name="subject" value="Nouveau message depuis letrefle.org">
+        <input type="hidden" name="from_name" value="Formulaire Contact">
+        
+        <input type="text" name="name" placeholder="Nom" required/>
+        <input type="email" name="email" placeholder="Adresse courriel" required/>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <input type="hidden" name="redirect" value="https://letrefle.org/"/>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </div>
+  <script src="/main.js"></script>
+
+  <div class="content">
+    <div class="title">
+      <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b5061df29d55a92d945_full_logo_blurple_RGB.svg" alt="Logo de Discord" />
+      <h1>Soutien de Discord</h1>
+    </div>
+    <p>
+      Discord est un réseau social organisé par "serveurs", sur les quels on peut catégoriser les discussions par salons et proposant un systeme de permissions avancées ayant pour but de permettre la réunion de communautés en ligne. <br/><br/>
+      Notre statut de partenaire Discord nous permet l'accès à différentes fonctionnalités avancées.
+    </p>
+    <table>
+      <tr>
+        <th>Avantages :</th>
+        <th>Contreparties :</th>
+      </tr>
+      <tr>
+        <td>URL d'invitation personnalisé</td>
+        <td>Nécessité de maintien de certaines statistiques</td>
+      </tr>
+      <tr>
+        <td>Abonnement Nitro offert</td>
+        <td>d'engagement de la communauté sur le serveur</td>
+      </tr>
+      <tr>
+        <td>Badge partenaire pour le serveur</td>
+      </tr>
+
+    </table>
+    <a href="https://discord.com/" target="_blank">En savoir plus sur Discord</a>
+  </div>
+
+  <footer>
+    <div class="left">
+      <div class="img">
+        <img src="/assets/logo.svg" alt="Logo de l'association">
+      </div>
+      <div class="footer-text">
+        <p>Le Trèfle 2.0<br/>
+          324, chemin de Goulsou<br/>
+          30120 Le Vigan<br/>
+          RNA : W30 300 5428
+        </p>
+      </div>
+    </div>
+    <div class="right">
+      <a href="/faq">F.A.Q.</a>
+      <a href="/legal">Mentions Légales</a>
+      <a href="/don" class="don">Faire un don</a>
+    </div>
+  </footer>
+</body>
+</html>
