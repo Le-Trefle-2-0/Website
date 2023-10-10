@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script src="https://cdn.counter.dev/script.js" data-id="f57a9dd6-2304-43c0-911b-bf75b45766bb" data-utcoffset="1"></script>
+  <meta name="description" content="Devenir bénévole au sein de l'association d'écoute Trèfle 2.0" />
+  <meta name="keywords" content="recrutements, association, écoute, trèfle, 2.0, soutien moral, discord" />
+  <title>Le Trèfle 2.0 - Recrutements</title>
+  <link rel="stylesheet" href="/benevoles/poste/style/main.css" />
+  <link rel="icon" href="/assets/logo.svg" />
+</head>
+
+<body>
+  <nav>
+    <div class="left">
+      <a href="/">
+        <img src="/assets/logo.svg" alt="Logo de l'association">
+        <h1>Le Trèfle 2.0</h1>
+      </a>
+    </div>
+    <div class="right">
+      <a href="/benevoles">Devenir bénévole</a>
+      <a onclick="openForm()">Contact</a>
+      <a href="/don" class="don">Faire un don</a>
+    </div>
+  </nav>
+
+  <div class="contact" id="contact">
+    <div class="contact-box">
+      <div class="close" onclick="closeForm()">X</div>
+      <h2>Nous contacter :</h2>
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="post">
+        <input type="hidden" name="access_key" value="ca3e2c67-3898-45e6-9d7a-8ba7329ccdff"/>
+        <input type="hidden" name="subject" value="Nouveau message depuis letrefle.org">
+        <input type="hidden" name="from_name" value="Formulaire Contact">
+        
+        <input type="text" name="name" placeholder="Nom" required/>
+        <input type="email" name="email" placeholder="Adresse courriel" required/>
+        <textarea class="textarea" name="message" placeholder="Message" required></textarea class="textarea">
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </div>
+  <script src="/main.js"></script>
+
+  <div class="page">
+    <h1>Recrutement - Chargé.e de Communication</h1>
+    
+    <div>
+      <h3>Préambule :</h3>
+        Dans le cadre de la gestion de sa communauté, Le Trèfle 2.0 met l’accent sur la mise en place d’une communication efficace et complète afin d’assurer la transparence de toutes les modifications importantes de l’association ainsi que de toucher une audience cible dans un plan de communication. L’association nécessite donc la rédaction d’actualités et la mise en place de stratégies de communication. 
+        <br/><br/>  
+        Les Chargé.es de Communication sont donc responsable de la mise en place des stratégies de communication et de la rédaction des textes des publications.  
+      </p>
+    </div>
+
+    <div>
+      <h3>Tâches :</h3>
+      <ul>
+        <li>Développer et mettre en place des plans de communication pour l’association ; </li>
+        <li>Promouvoir l’image de l’association dans les plans de recrutements ainsi que de collectes de dons de l’association ; </li>
+        <li>Etudier les publics visés afin d’adapter les pratiques de communication à ces derniers. </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Responsabilités :</h3>
+      <p>
+        Les Chargé.es de Communication ont pour objectif de trouver les moyens de communication les plus propices à l’association lorsque celle-ci souhaite effectuer une communication sur un sujet en particulier. Il peut notamment s’agir de la rédaction d’une newsletter ou de publications destinées aux différents réseaux sociaux de l’association 
+      </p>
+    </div>
+
+    <div>
+      <h3>Qualifications :</h3>
+      <ul>
+        <li>Une bonne maitrise de la langue française, particulièrement écrite est strictement nécessaire ; </li>
+        <li>Les capacités rédactionnelles sont nécessaires ; </li>
+        <li>La connaissance du fonctionnement des réseaux sociaux et des fonctionnalités de ciblage de public sont fortement bénéfiques ; </li>
+        <li>Toute formation, qualification ou expérience en communication digitale est un atout. </li>
+      </ul>
+    </div>
+
+    <div>
+      <a onclick="applyForm(true)">Postuler</a>
+    </div>
+  </div>
+  
+  <div class="form" id="form">
+    <div class="content">
+      <div class="close" onclick="applyForm(false)">X</div>
+
+      <div class="top">
+        <h2>Formulaire de candidature - Chargé.e de Communication</h2>
+        <p>Merci pour l'intéret que vous apportez à notre association ainsi que pour votre volonté d'investissement. Afin de pouvoir répondre plus en détails à votre candidature nous vous demandons de bien vouloir remplir le formulaire ci-dessous.</p>  
+      </div>
+
+
+      <form class="content-form" action="https://api.web3forms.com/submit" method="post">
+        <input type="hidden" name="access_key" value="ca3e2c67-3898-45e6-9d7a-8ba7329ccdff"/>
+        <input type="hidden" name="subject" value="Nouvelle candidature pour le poste de Bénévole Écoutant">
+        <input type="hidden" name="from_name" value="Candidatures">
+
+        <div class="input">
+          <input type="text" name="Prénom" required>
+          <span>Prénom</span>
+        </div>
+
+        <div class="input">
+          <input type="text" name="Nom" required>
+          <span>Nom</span>
+        </div>
+
+        <div class="input">
+          <input type="email" name="email" required>
+          <span>Adresse courriel</span>
+        </div>
+
+        <div class="input">
+          <input type="text" name="Age" required>
+          <span>Depuis combien de temps utilisez-vous Discord ?</span>
+        </div>
+
+        <div class="input large-input">
+          <textarea class="textarea" type="text" name="Motivation" minlength="1" spellcheck="false" autocomplete="off" required></textarea class="textarea">
+          <span>Quelle est votre motivation a intégrer l'association ?</span>
+        </div>
+
+        <button type="submit">
+          <span>Postuler</span>
+        </button>
+      </form>
+
+      <div class="responsive-error">
+        <span>Ce formulaire n'est pas encore disponible depuis cet appareil ! Merci d'utiliser un ordinateur.</span>
+      </div>
+    </div>
+  </div>
+  <script src="/benevoles/poste/forms.js"></script>
+
+  <footer>
+    <div class="left">
+      <div class="img">
+        <img src="/assets/logo.svg" alt="Logo de l'association">
+      </div>
+      <div class="footer-text">
+        <p>Le Trèfle 2.0<br/>
+          324, chemin de Goulsou<br/>
+          30120 Le Vigan<br/>
+          RNA : W30 300 5428
+        </p>
+      </div>
+    </div>
+    <div class="right">
+      <a href="/faq">F.A.Q.</a>
+      <a href="/legal">Mentions Légales</a>
+      <a href="/don" class="don">Faire un don</a>
+    </div>
+  </footer>
+</body>
+</html>
