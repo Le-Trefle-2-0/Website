@@ -178,13 +178,14 @@ nav .right a {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
 }
 
 .form .content {
     background: #fff;
     width: 70vh;
-    height: 80vh;
-    margin: 7.5vh auto;
+    height: 90vh;
+    margin: 5vh auto;
     border-radius: 3vh;
     display: flex;
     flex-direction: column;
@@ -197,7 +198,7 @@ nav .right a {
 
 .form .content .close {
     position: absolute;
-    top: 10vh;
+    top: 8vh;
     cursor: pointer;
     left: calc(50vw + 35vh - 40px);
 }
@@ -206,7 +207,7 @@ nav .right a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     text-align: center;
 }
 
@@ -217,8 +218,8 @@ nav .right a {
     gap: 20px;
     text-align: center;
     width: 100%;
-    height: 60%;
-    height: 50vh;
+    height: 70%;
+    /* height: 60vh; */
 }
 
 .form .content .input {
@@ -247,12 +248,13 @@ nav .right a {
 .form .content .input span {
     position: absolute;
     left: 0;
-    top: 0;
+    top: -4px;
     z-index: 1000;
     padding: 10px;
     pointer-events: none;
     font-size: 1em;
     text-transform: uppercase;
+    text-align: left;
     transition: 0.5s;
     color: #A4C79F;
 }
@@ -266,7 +268,8 @@ nav .right a {
 .form .content .input input:focus ~ span,
 .form .content .input input:valid ~ span,
 .form .content .large-input textarea:focus ~ span,
-.form .content .large-input textarea:valid ~ span {
+.form .content .large-input textarea:valid ~ span,
+.form .content .large-input .text ~ span {
     top: -10px;
     left: 5px;
     background: #A4C79F;
