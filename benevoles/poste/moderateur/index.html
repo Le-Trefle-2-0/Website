@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script src="https://cdn.counter.dev/script.js" data-id="f57a9dd6-2304-43c0-911b-bf75b45766bb" data-utcoffset="1"></script>
+  <meta name="description" content="Devenir bénévole au sein de l'association d'écoute Trèfle 2.0" />
+  <meta name="keywords" content="recrutements, association, écoute, trèfle, 2.0, soutien moral, discord" />
+  <title>Le Trèfle 2.0 - Recrutements</title>
+  <link rel="stylesheet" href="/benevoles/poste/style/main.css" />
+  <link rel="icon" href="/assets/logo.svg" />
+</head>
+
+<body>
+  <nav>
+    <div class="left">
+      <a href="/">
+        <img src="/assets/logo.svg" alt="Logo de l'association">
+        <h1>Le Trèfle 2.0</h1>
+      </a>
+    </div>
+    <div class="right">
+      <a href="/benevoles">Devenir bénévole</a>
+      <a onclick="openForm()">Contact</a>
+      <a href="/don" class="don">Faire un don</a>
+    </div>
+  </nav>
+
+  <div class="contact" id="contact">
+    <div class="contact-box">
+      <div class="close" onclick="closeForm()">X</div>
+      <h2>Nous contacter :</h2>
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="post">
+        <input type="hidden" name="access_key" value="ca3e2c67-3898-45e6-9d7a-8ba7329ccdff"/>
+        <input type="hidden" name="subject" value="Nouveau message depuis letrefle.org">
+        <input type="hidden" name="from_name" value="Formulaire Contact">
+        
+        <input type="text" name="name" placeholder="Nom" required/>
+        <input type="email" name="email" placeholder="Adresse courriel" required/>
+        <textarea class="textarea" name="message" placeholder="Message" required></textarea class="textarea">
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </div>
+  <script src="/main.js"></script>
+
+  <div class="page">
+    <h1>Recrutement - Modérateur.trice (18 ans minimum)</h1>
+    
+    <div>
+      <h3>Préambule :</h3>
+      Dans le cadre de son serveur Discord, Le Trèfle 2.0 met à disposition de ses utilisateurs différents espaces d’échange et de communication accessible au grand public. Ces salons sont ouverts tous les jours, de 7h à 23h à toute personne ayant rejoint notre serveur Discord et souhaitant y parler librement. Nous souhaitons cependant mettre l’accent sur le respect de chacun ainsi que l’accessibilité de cet espace pour tous. Il est donc important de maintenir des salons publics bienveillants et respectueux et un accompagnement des membres, ce qui constitue la tâche des Mdoérateur.trices. L’équipe de modération est donc chargée de veiller au maximum sur les échanges, tant textuels qu’éventuellement vocaux, ainsi que d’appliquer en équipe les sanctions nécessaires.
+      </p>
+    </div>
+
+    <div>
+      <h3>Tâches :</h3>
+      <ul>
+        <li>Veiller au respect des Règles de Bonne Conduite de la communauté sur le serveur Discord ;</li>
+        <li>Consulter régulièrement les salons publics ainsi que les profils des membres ;</li>
+        <li>Avertir les autres membres de l’équipe en cas de situation nécessitant éventuellement une intervention ;</li>
+        <li>Appliquer des sanctions de modération et exposer les motifs de ces décisions aux membres ;</li>
+        <li>Recevoir et traiter les tickets de contact ouverts par les membres du serveur ;</li>
+        <li>Orienter les membres en potentielle difficulté vers les structures et contacts adaptés.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Responsabilités :</h3>
+      <p>
+        L’ensemble de l’équipe de modération est responsable de la bienséance dans les salons textuels et vocaux sur le serveur ainsi que de l’image portée de manière plus large par l’association. Il tient donc de l’équipe de modération de maintenir les échanges accessibles à tous. 
+      </p>
+    </div>
+
+    <div>
+      <h3>Qualifications :</h3>
+      <ul>
+        <li>Une bonne maitrise de la langue française, particulièrement écrite est strictement nécessaire ; </li>
+        <li>Une expérience et connaissance de la plateforme Discord sont de forts atouts ;</li>
+        <li>Toute expérience de modération ou de gestion de communautés en ligne est appréciée.</li>
+      </ul>
+    </div>
+
+    <div>
+      <a onclick="applyForm(true)">Postuler</a>
+    </div>
+  </div>
+  
+  <div class="form" id="form">
+    <div class="content">
+      <div class="close" onclick="applyForm(false)">X</div>
+
+      <div class="top">
+        <h2>Formulaire de candidature - Modérateur.trice</h2>
+        <p>Merci pour l'intéret que vous apportez à notre association ainsi que pour votre volonté d'investissement. Afin de pouvoir répondre plus en détails à votre candidature nous vous demandons de bien vouloir remplir le formulaire ci-dessous.</p>  
+      </div>
+
+
+      <form class="content-form" action="https://api.web3forms.com/submit" method="post">
+        <input type="hidden" name="access_key" value="ca3e2c67-3898-45e6-9d7a-8ba7329ccdff"/>
+        <input type="hidden" name="subject" value="Nouvelle candidature pour le poste de Modérateur.trice">
+        <input type="hidden" name="from_name" value="Candidatures">
+
+        <div class="input">
+          <input type="text" name="Prénom" required>
+          <span>Prénom</span>
+        </div>
+
+        <div class="input">
+          <input type="text" name="Nom" required>
+          <span>Nom</span>
+        </div>
+
+        <div class="input">
+          <input type="email" name="email" required>
+          <span>Adresse courriel</span>
+        </div>
+
+        <div class="input">
+          <input type="text" name="Age" required>
+          <span>Depuis combien de temps utilisez-vous Discord ?</span>
+        </div>
+
+        <div class="input large-input">
+          <textarea class="textarea" type="text" name="Motivation" minlength="1" spellcheck="false" autocomplete="off" required></textarea class="textarea">
+          <span>Quelle est votre motivation a intégrer l'association ?</span>
+        </div>
+
+        <button type="submit">
+          <span>Postuler</span>
+        </button>
+      </form>
+
+      <div class="responsive-error">
+        <span>Ce formulaire n'est pas encore disponible depuis cet appareil ! Merci d'utiliser un ordinateur.</span>
+      </div>
+    </div>
+  </div>
+  <script src="/benevoles/poste/forms.js"></script>
+
+  <footer>
+    <div class="left">
+      <div class="img">
+        <img src="/assets/logo.svg" alt="Logo de l'association">
+      </div>
+      <div class="footer-text">
+        <p>Le Trèfle 2.0<br/>
+          324, chemin de Goulsou<br/>
+          30120 Le Vigan<br/>
+          RNA : W30 300 5428
+        </p>
+      </div>
+    </div>
+    <div class="right">
+      <a href="/faq">F.A.Q.</a>
+      <a href="/legal">Mentions Légales</a>
+      <a href="/don" class="don">Faire un don</a>
+    </div>
+  </footer>
+</body>
+</html>
