@@ -407,6 +407,10 @@ footer .right a {
         bottom: 0;
     }
 
+    .return-btn {
+        display: none;
+    }
+
     .page {
         width: 90%;
     }
