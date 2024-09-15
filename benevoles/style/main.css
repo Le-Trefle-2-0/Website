@@ -186,18 +186,14 @@ nav .right a {
     font-weight: 600;
 }
 
-.recruiting .element .button {
+.recruiting .element .button a {
+    display: inline-block;
     background-color: #A4C79F;
     border-radius: 40px;
     padding: 10px;
     width: 200px;
     text-align: center;
     font-weight: 600;
-    color: #000;
-    text-decoration: none;
-}
-
-.recruiting .element .button a {
     color: #000;
     text-decoration: none;
     font-size: 1.8vh;
@@ -242,7 +238,7 @@ nav .right a {
     font-weight: 600;
 }
 
-.recruiting .element-closed .button {
+.recruiting .element-closed .button a {
     background-color: #c7c7c7;
     border-radius: 40px;
     padding: 10px;
@@ -250,11 +246,6 @@ nav .right a {
     text-align: center;
     font-weight: 600;
     color: #5c5c5c;
-    text-decoration: none;
-}
-
-.recruiting .element-closed .button a {
-    color: #4d4d4d;
     text-decoration: none;
     font-size: 1.8vh;
 }
