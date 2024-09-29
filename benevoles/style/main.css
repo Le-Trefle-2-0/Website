@@ -186,7 +186,8 @@ nav .right a {
     font-weight: 600;
 }
 
-.recruiting .button {
+.recruiting .element .button a {
+    display: inline-block;
     background-color: #A4C79F;
     border-radius: 40px;
     padding: 10px;
@@ -195,10 +196,56 @@ nav .right a {
     font-weight: 600;
     color: #000;
     text-decoration: none;
+    font-size: 1.8vh;
 }
 
-.recruiting .button a {
-    color: #000;
+/* CLOSED RECRUITMENT */
+
+.recruiting .element-closed {
+    width: 70vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    outline: #c7c7c7 4px solid;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.recruiting .element-closed .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.recruiting .element-closed .info .logo {
+    width: 80px;
+    height: 80px;
+    filter: grayscale();
+}
+
+.recruiting .element-closed .info .text {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.recruiting .element-closed .title h2 {
+    font-weight: 600;
+}
+
+.recruiting .element-closed .button a {
+    background-color: #c7c7c7;
+    border-radius: 40px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    font-weight: 600;
+    color: #5c5c5c;
     text-decoration: none;
     font-size: 1.8vh;
 }
@@ -255,6 +302,27 @@ footer .right a {
     }
 
     .recruiting .element .button {
+        position: relative;
+        /* top: calc(150px + 100%); */
+        top: 45px;
+        bottom: 0;
+    }
+
+    .recruiting .element-closed {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .recruiting .element-closed .logo {
+        display: none;
+    }
+
+    .recruiting .element-closed .text {
+        text-align: center;
+    }
+
+    .recruiting .element-closed .button {
         position: relative;
         /* top: calc(150px + 100%); */
         top: 45px;

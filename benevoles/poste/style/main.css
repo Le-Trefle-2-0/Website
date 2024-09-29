@@ -129,6 +129,31 @@ nav .right a {
     background: #C3D7CD;
 }
 
+.return-btn a {
+    position: fixed;
+    top: 20vh;
+    left: 12vw;
+    border: 2px solid #A4C79F;
+    border-radius: 50px;
+    text-align: center;
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2vh;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 1vh;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    color: #A4C79F;
+}
+
+.return-btn:hover a {
+    color: #fff;
+    background: #A4C79F;
+}
+
 .page {
     margin-top: 20vh;
     display: flex;
@@ -166,6 +191,29 @@ nav .right a {
 
 .page a:hover {
     background: #A4C79F;
+    color: #fff;
+}
+
+.page a.closed {
+    position: absolute;
+    left: calc(50% - (150px / 2));
+    border: 2px solid #9a9a9a;
+    color: 9a9a9a;
+    border-radius: 50px;
+    text-align: center;
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2vh;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 1vh;
+    cursor: not-allowed;
+    transition: 0.5s;
+}
+
+.page a.closed:hover {
+    background: #9a9a9a;
     color: #fff;
 }
 
@@ -357,6 +405,10 @@ footer .right a {
         /* top: calc(150px + 100%); */
         top: 45px;
         bottom: 0;
+    }
+
+    .return-btn {
+        display: none;
     }
 
     .page {
