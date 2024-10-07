@@ -9,6 +9,8 @@
   <meta name="keywords" content="association, écoute, trèfle, 2.0, soutien moral, discord" />
   <title>Le Trèfle 2.0 - F.A.Q.</title>
   <link rel="stylesheet" href="/faq/style/main.css" />
+  <link rel="stylesheet" href="/style/contact.css" />
+  <link rel="stylesheet" href="/style/nav.css">
   <link rel="icon" href="/assets/logo.svg" />
 </head>
 
@@ -30,16 +32,21 @@
   <div class="contact" id="contact">
     <div class="contact-box">
       <div class="close" onclick="closeForm()">X</div>
-      <h2>Nous contacter :</h2>
-      <form class="contact-form" action="https://api.web3forms.com/submit" method="post">
-        <input type="hidden" name="access_key" value="ca3e2c67-3898-45e6-9d7a-8ba7329ccdff"/>
-        <input type="hidden" name="subject" value="Nouveau message depuis letrefle.org">
-        <input type="hidden" name="from_name" value="Formulaire Contact">
-        
-        <input type="text" name="name" placeholder="Nom" required/>
-        <input type="email" name="email" placeholder="Adresse courriel" required/>
-        <textarea name="message" placeholder="Message" required></textarea>
-        <button type="submit">Envoyer</button>
+      <div class="top">
+        <h2>Nous contacter :</h2>
+        <p>Ce formulaire de contact n'est pas destiné aux demandes d'écoutes. Pour cela merci de nous contacter via notre permanence sur <a href="https://discord.gg/letrefle">Discord</a>.</p>
+      </div>
+      <div class="bottom">
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="post">
+          <input type="hidden" name="access_key" value="ca3e2c67-3898-45e6-9d7a-8ba7329ccdff"/>
+          <input type="hidden" name="subject" value="Nouveau message depuis letrefle.org">
+          <input type="hidden" name="from_name" value="Formulaire Contact">
+          
+          <input type="text" name="name" placeholder="Nom" required/>
+          <input type="email" name="email" placeholder="Adresse courriel" required/>
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit">Envoyer</button>
+        </div>
       </form>
     </div>
   </div>
