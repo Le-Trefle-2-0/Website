@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.counter.dev/script.js" data-id="f57a9dd6-2304-43c0-911b-bf75b45766bb" data-utcoffset="1"></script>
+  <meta name="description" content="Le Trèfle 2.0 est une association proposant un service d’écoute active gratuit et anonyme tous les soirs de 20h à 23h." />
+  <meta name="keywords" content="association, écoute, trefle, 2.0, soutien moral, discord" />
+  <title>Le Trèfle 2.0 - Accueil</title>
+  <link rel="stylesheet" href="style/main.css" />
+  <link rel="stylesheet" href="style/animate.css" />
+  <link rel="stylesheet" href="style/carousel.css" />
+  <link rel="stylesheet" href="/style/contact.css" />
+  <link rel="stylesheet" href="/style/nav.css">
+  <link rel="icon" href="/assets/logo.svg" />
+</head>
+
+<body>
+  <nav>
+    <div class="left">
+      <a href="/">
+        <img src="/assets/logo.svg" alt="Logo de l'association">
+        <h1>Le Trèfle 2.0</h1>
+      </a>
+    </div>
+    <div class="right">
+      <a href="/benevoles">Devenir bénévole</a>
+      <a onclick="openForm()">Contact</a>
+      <a href="/don" class="don">Faire un don</a>
+    </div>
+  </nav>
+
+  <div class="contact" id="contact">
+    <div class="contact-box">
+      <div class="close" onclick="closeForm()">X</div>
+      <div class="top">
+        <h2>Nous contacter :</h2>
+        <p>Ce formulaire de contact n'est pas destiné aux demandes d'écoutes. Pour cela merci de nous contacter via notre permanence sur <a href="https://discord.gg/letrefle">Discord</a>.</p>
+      </div>
+      <div class="bottom">
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="post">
+          <input type="hidden" name="access_key" value="ca3e2c67-3898-45e6-9d7a-8ba7329ccdff"/>
+          <input type="hidden" name="subject" value="Nouveau message depuis letrefle.org">
+          <input type="hidden" name="from_name" value="Formulaire Contact">
+          
+          <input type="text" name="name" placeholder="Nom" required/>
+          <input type="email" name="email" placeholder="Adresse courriel" required/>
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit">Envoyer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="/main.js"></script>
+
+  <div class="benevol">
+    <div class="img">
+      <img src="/assets/benevole.png" alt="Icone de bénévole">
+    </div>
+    <div class="benevol-text">
+      <h1>«Une petite action pour vous, mais une grande aide pour les autres»</h1>
+      <p>Le Trèfle 2.0 est une association proposant un service d’écoute active gratuit et anonyme tous les soirs de 20h
+        à 23h.<br/><br/>
+        Les bénévoles écoutants sont recrutés, encadrés et formés par différents professionnels en santé
+        mentale.<br/><br/>
+        L’association est reconnue d'intérêt général par l’état français, ainsi que reconnue Partenaire par
+        Discord.<br/><br/>
+        Traitant plus de 100 écoutes chaque mois, nous menons une lutte active contre le suicide ou tout autre problématique
+        psychologique ou émotionnelle en apportant un soutien moral, neutre, sans jugement, et anonyme.<br/><br/>
+        Nos procédures et formations permettent d'apporter un encadrement professionnel aux bénévoles, 
+        essentiels au fonctionnement de notre association. C'est grâce à eux que nous pouvons proposer ce type de services.
+      </p>
+      <div class="scroll"><p class="scroll-text">⏬ Descendez pour en savoir plus</p></div>
+    </div>
+  </div>
+
+  <div class="slider">
+    <h3>Avec le soutien de :</h3>
+    <div class="slide-track">
+      <a class="slide" href="/partner/microsoft/">
+        <img src="assets/partners/Microsoft_365.png" alt="" />
+      </a>
+      <a class="slide" href="/partner/microsoft/">
+        <img src="assets/partners/Microsoft_Azure.png" alt="" />
+      </a>
+      <a class="slide" href="/partner/drajes/">
+        <img src="assets/partners/Educ_Nat.png" alt="" />
+      </a>
+      <a class="slide" href="/partner/drajes/">
+        <img src="assets/partners/Ac_Montpellier.png" alt="" />
+      </a>
+      <a class="slide" href="/partner/discord/">
+        <img src="assets/partners/Discord.png" alt="" />
+      </a>
+      <a class="slide" href="/partner/microsoft/">
+        <img src="assets/partners/Microsoft_365.png" alt="" />
+      </a>
+      <a class="slide" href="/partner/microsoft/">
+        <img src="assets/partners/Microsoft_Azure.png" alt="" />
+      </a>
+      <a class="slide" href="/partner/drajes/">
+        <img src="assets/partners/Educ_Nat.png" alt="" />
+      </a>
+      <a class="slide" href="/partner/drajes/">
+        <img src="assets/partners/Ac_Montpellier.png" alt="" />
+      </a>
+      <a class="slide" href="/partner/discord/">
+        <img src="assets/partners/Discord.png" alt="" />
+      </a>
+      <a class="slide" href="/partner/microsoft/">
+        <img src="assets/partners/Microsoft_365.png" alt="" />
+      </a>
+      <a class="slide" href="/partner/microsoft/">
+        <img src="assets/partners/Microsoft_Azure.png" alt="" />
+      </a>
+      <a class="slide" href="/partner/drajes/">
+        <img src="assets/partners/Educ_Nat.png" alt="" />
+      </a>
+      <a class="slide" href="/partner/drajes/">
+        <img src="assets/partners/Ac_Montpellier.png" alt="" />
+      </a>
+      <a class="slide" href="/partner/discord/">
+        <img src="assets/partners/Discord.png" alt="" />
+      </a>
+    </div>
+  </div>
+
+  <div class="discord">
+    <div class="discord-text">
+      <h1>Une association sur Discord</h1>
+      <p>Discord est un réseau social sur le quel chacun peut créer son propre forum et l’animer.<br><br>
+
+          Nous avons choisi Discord pour nous adapter à la nouvelle génération, cible principale de l’association, ainsi que pour sa polyvalence et son utilité pratique grace a l’organisation des discussions en salons.<br><br>
+          
+          Discord permet également, avec l’aide de bots de rendre les échanges avec les bénévoles écoutants anonymes.<br><br>
+          
+          Discord étant un réseau public, et notre serveur étant accessible de tout de monde, une modération stricte est imposée afin de fournir un environnement sécurisé et propice pour tout type de public susceptible de consulter notre serveur et nos services.
+      </p>
+      <div class="invite">
+        <a href="https://discord.gg/letrefle" title="Invitation Discord">
+            <img src="/assets/discord.svg" alt="Logo de Discord"/>
+            <h2>Nous rejoindre sur Discord</h2>
+        </a>
+      </div>
+    </div>
+    <iframe src="https://discord.com/widget?id=718246706319458365&theme=light"></iframe>
+  </div>
+
+  <footer>
+    <div class="left">
+      <div class="img">
+        <img src="/assets/logo.svg" alt="Logo de l'association">
+      </div>
+      <div class="footer-text">
+        <p>Le Trèfle 2.0<br/>
+          324, chemin de Goulsou<br/>
+          30120 Le Vigan<br/>
+          RNA : W30 300 5428
+        </p>
+      </div>
+    </div>
+    <div class="right">
+      <a href="/faq">F.A.Q.</a>
+      <a href="/legal">Mentions Légales</a>
+      <a href="/don" class="don">Faire un don</a>
+    </div>
+  </footer>
+</body>
+</html>
