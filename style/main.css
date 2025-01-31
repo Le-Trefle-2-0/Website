@@ -97,42 +97,6 @@ body {
     border: 2px solid transparent;
 }
 
-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: #C3D7CD;
-    flex-wrap: wrap;
-    padding: 2vh;
-    margin-top: 10vh;
-}
-
-footer .left {
-    align-items: center;
-    display: flex;
-}
-
-.left .footer-text {
-    margin-left: 10vh;
-}
-
-footer .left .img img {
-    width: 10vh;
-}
-
-footer .right a {
-    color: #000;
-    text-decoration: none;
-    font-size: 2vh;
-    margin: 1vh;
-}
-
-.don {
-    background: #A4C79F;
-    border-radius: 3vh;
-    padding: 1vh;
-}
-
 @media (max-width: 1000px) {
     .benevol-text {
         padding: 0;
@@ -161,7 +125,8 @@ footer .right a {
     }
 
     .discord .invite {
-        margin-top: calc(400px - 40vw);
+        position: relative;
+        top: calc(400px - 40vw);
     }
 
     .discord-text .invite a {
@@ -171,17 +136,5 @@ footer .right a {
 
     iframe {
         display: none;
-    }
-
-    footer {
-        margin-top: 0vh;
-    }
-
-    footer .right {
-        margin-top: 20px;
-    }
-
-    .left .footer-text {
-        margin-left: 2vh;
     }
 }

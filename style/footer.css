@@ -1,0 +1,129 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #C3D7CD;
+    flex-wrap: wrap;
+    padding: 2vh;
+    margin-top: 10vh;
+}
+
+footer .left {
+    align-items: center;
+    display: flex;
+}
+
+.left .footer-text {
+    margin-left: 10vh;
+}
+
+footer .left .img img {
+    width: 10vh;
+}
+
+footer .right {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .right #mc_embed_shell {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .right #mc_embed_shell h2 {
+    font-weight: 400;
+}
+
+footer .right #mc_embed_shell .input {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .right #mc_embed_shell .input input {
+    padding: 0 0 0 10px;
+    border-radius: 5px;
+    border: 2px solid #A4C79F;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+footer .right #mc_embed_shell .input span {
+    position: absolute;
+    transform: translateY(-8px);
+    z-index: 1000;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: left;
+    transition: 0.5s;
+    color: #A4C79F;
+}
+
+footer .right #mc_embed_shell .input input:focus {
+    border: 2px solid #A4C79F;
+    outline: none;
+}
+
+footer .right #mc_embed_shell .input input:focus ~ span,
+footer .right #mc_embed_shell .input input:valid ~ span {
+    transform: translateY(-15px);
+    background: #A4C79F;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 3px;
+    font-size: 0.7em;
+}
+
+footer .right #mc_embed_shell .button {
+    background-color: #A4C79F;
+    border-radius: 3vh;
+    border: none;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    margin-top: 16px;
+    transition: 0.5s;
+}
+
+footer .right #mc_embed_shell .button:hover {
+    background: #C3D7CD;
+}
+
+footer .right a {
+    color: #000;
+    text-decoration: none;
+    font-size: 2vh;
+    margin: 1vh;
+    height: 35px;
+}
+
+.don {
+    background: #A4C79F;
+    border-radius: 3vh;
+    padding: 1vh;
+}
+
+@media (max-width: 1000px) {
+    footer {
+        margin-top: 0vh;
+    }
+
+    footer .right {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right #mc_embed_signup_scroll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left .footer-text {
+        margin-left: 2vh;
+    }
+}
