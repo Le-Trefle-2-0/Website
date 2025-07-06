@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9872859c-e7c5-45bf-9e13-08404182144e" name="Changes" comment="add base ui components">
-      <change afterPath="$PROJECT_DIR$/components/navbar.tsx" afterDir="false" />
+    <list default="true" id="9872859c-e7c5-45bf-9e13-08404182144e" name="Changes" comment="base navbar">
+      <change afterPath="$PROJECT_DIR$/public/logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +66,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\WebstormProjects\Website\public" />
       <recent name="C:\Users\admin\WebstormProjects\Website" />
     </key>
   </component>
@@ -88,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1751805262000</updated>
       <workItem from="1751805263099" duration="67000" />
-      <workItem from="1751805339170" duration="2651000" />
+      <workItem from="1751805339170" duration="3343000" />
     </task>
     <task id="LOCAL-00001" summary="rebase on nextjs app">
       <option name="closed" value="true" />
@@ -114,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751810656264</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="base navbar">
+      <option name="closed" value="true" />
+      <created>1751811252696</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1751811252696</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +130,7 @@
     <MESSAGE value="rebase on nextjs app" />
     <MESSAGE value="nextjs base files and config for static export" />
     <MESSAGE value="add base ui components" />
-    <option name="LAST_COMMIT_MESSAGE" value="add base ui components" />
+    <MESSAGE value="base navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="base navbar" />
   </component>
 </project>

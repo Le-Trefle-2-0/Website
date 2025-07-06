@@ -18,6 +18,8 @@ export const metadata: Metadata = {
 };
 import { ThemeProvider } from "@/components/theme-provider"
 import {NavBar} from "@/components/navbar";
+import Image from "next/image";
+import logo from "@/public/logo.svg"
 
 export default function RootLayout({
                                        children,
@@ -28,14 +30,20 @@ export default function RootLayout({
         <>
             <html lang="en" suppressHydrationWarning>
             <head />
-            <body>
+            <body suppressHydrationWarning>
             <ThemeProvider
                 attribute="class"
                 defaultTheme="system"
                 enableSystem
                 disableTransitionOnChange
             >
-                <NavBar/>
+                <div className="flex flex-row justify-around fixed w-full p-6">
+                    <div className="flex flex-row text-center justify-center">
+                        <Image src={logo} alt={"logo"} height={80} />
+                        Le Trèfle 2.0
+                    </div>
+                    <NavBar/>
+                </div>
                 {children}
             </ThemeProvider>
             </body>
