@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Titillium_Web } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +10,11 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const titilium = Titillium_Web({
+    subsets: ['latin'],
+    weight: ['200', '300', '400', '600', '700', '900']
 });
 
 export const metadata: Metadata = {
@@ -28,7 +33,7 @@ export default function RootLayout({
 }>) {
     return (
         <>
-            <html lang="en" suppressHydrationWarning>
+            <html lang="fr" className={titilium.className} suppressHydrationWarning>
             <head />
             <body suppressHydrationWarning>
             <ThemeProvider
@@ -37,10 +42,10 @@ export default function RootLayout({
                 enableSystem
                 disableTransitionOnChange
             >
-                <div className="flex flex-row justify-around fixed w-full p-6">
-                    <div className="flex flex-row text-center justify-center">
+                <div className="flex flex-row justify-around fixed w-full p-6 bg-white">
+                    <div className="flex flex-row text-center justify-center items-center gap-6">
                         <Image src={logo} alt={"logo"} height={80} />
-                        Le Trèfle 2.0
+                        <h1 className="text-center text-2xl">Le Trèfle 2.0</h1>
                     </div>
                     <NavBar/>
                 </div>
